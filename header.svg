@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" role="img" aria-label="Swaiku mission control banner">
+  <defs>
+    <!-- space -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#03020b"/>
+      <stop offset="0.55" stop-color="#080519"/>
+      <stop offset="1" stop-color="#150a33"/>
+    </linearGradient>
+    <filter id="b1" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="1.2"/></filter>
+    <filter id="b3" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.5"/></filter>
+    <filter id="b6" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+    <filter id="b14" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+
+    <!-- nebula smoke -->
+    <filter id="smoke" filterUnits="userSpaceOnUse" x="0" y="0" width="900" height="260" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.006 0.012" numOctaves="4" seed="21" result="s"/>
+      <feColorMatrix in="s" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.25  0 0 0 0 0.95  3.2 0 0 0 -1.35" result="sc"/>
+      <feGaussianBlur in="sc" stdDeviation="3"/>
+    </filter>
+    <radialGradient id="smokeMaskG" gradientUnits="userSpaceOnUse" cx="640" cy="70" r="300">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="smokeMask" maskUnits="userSpaceOnUse" x="0" y="0" width="900" height="260">
+      <rect x="0" y="0" width="900" height="260" fill="url(#smokeMaskG)"/>
+    </mask>
+
+    <!-- planet surface: violet continents -->
+    <filter id="land" filterUnits="userSpaceOnUse" x="0" y="0" width="900" height="260" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.02" numOctaves="5" stitchTiles="stitch" seed="14" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.2  0 0 0 0 0.1  0 0 0 0 0.5  8 0 0 0 -3.7" result="landA"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.03 0.05" numOctaves="4" stitchTiles="stitch" seed="3" result="m"/>
+      <feColorMatrix in="m" type="matrix" values="0.55 0 0 0 0.2  0.2 0 0 0 0.08  0.7 0 0 0 0.38  0 0 0 0 1" result="landC"/>
+      <feComposite in="landC" in2="landA" operator="in"/>
+    </filter>
+
+    <!-- lilac clouds -->
+    <filter id="clouds" filterUnits="userSpaceOnUse" x="0" y="0" width="900" height="260" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014 0.045" numOctaves="5" stitchTiles="stitch" seed="5" result="c"/>
+      <feColorMatrix in="c" type="matrix" values="0 0 0 0 0.93  0 0 0 0 0.84  0 0 0 0 1  3.4 0 0 0 -1.5"/>
+    </filter>
+
+    <!-- glowing veins on the land (cyan emissive) -->
+    <filter id="veins" filterUnits="userSpaceOnUse" x="0" y="0" width="900" height="260" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.02" numOctaves="5" stitchTiles="stitch" seed="14" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  8 0 0 0 -3.8" result="landMask"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.09" numOctaves="3" stitchTiles="stitch" seed="9" result="f"/>
+      <feColorMatrix in="f" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.95  0 0 0 0 1  14 0 0 0 -8.2" result="dots"/>
+      <feComposite in="dots" in2="landMask" operator="in"/>
+    </filter>
+
+    <clipPath id="planetClip"><circle cx="700" cy="140" r="118"/></clipPath>
+
+    <radialGradient id="ocean" gradientUnits="userSpaceOnUse" cx="775" cy="70" r="240">
+      <stop offset="0" stop-color="#9b6bff"/>
+      <stop offset="0.4" stop-color="#4c1d95"/>
+      <stop offset="1" stop-color="#150833"/>
+    </radialGradient>
+
+    <linearGradient id="shade" gradientUnits="userSpaceOnUse" x1="800" y1="45" x2="610" y2="240">
+      <stop offset="0" stop-color="#0b0422" stop-opacity="0"/>
+      <stop offset="0.4" stop-color="#0b0422" stop-opacity="0.3"/>
+      <stop offset="0.75" stop-color="#0b0422" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#07021a" stop-opacity="0.93"/>
+    </linearGradient>
+
+    <linearGradient id="veinMaskG" gradientUnits="userSpaceOnUse" x1="800" y1="45" x2="610" y2="240">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.9"/>
+    </linearGradient>
+    <mask id="veinMask" maskUnits="userSpaceOnUse" x="0" y="0" width="900" height="260">
+      <rect x="0" y="0" width="900" height="260" fill="url(#veinMaskG)"/>
+    </mask>
+
+    <!-- lit-side mask (top right) -->
+    <linearGradient id="litG" gradientUnits="userSpaceOnUse" x1="610" y1="240" x2="810" y2="40">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.18"/>
+      <stop offset="0.55" stop-color="#fff" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <mask id="litMask" maskUnits="userSpaceOnUse" x="0" y="0" width="900" height="260">
+      <rect x="0" y="0" width="900" height="260" fill="url(#litG)"/>
+    </mask>
+
+    <!-- magenta light source (top right, off screen) -->
+    <radialGradient id="light" gradientUnits="userSpaceOnUse" cx="900" cy="-10" r="430">
+      <stop offset="0" stop-color="#f0abfc" stop-opacity="0.9"/>
+      <stop offset="0.2" stop-color="#d946ef" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#7c3aed" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- inner atmosphere rim -->
+    <radialGradient id="rimIn" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.86" stop-color="#a855f7" stop-opacity="0"/>
+      <stop offset="0.955" stop-color="#b784ff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#f0e1ff" stop-opacity="1"/>
+    </radialGradient>
+    <!-- outer atmosphere -->
+    <radialGradient id="atmo1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.8788" stop-color="#c084fc" stop-opacity="0.8"/>
+      <stop offset="0.94" stop-color="#8b5cf6" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="atmo2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.78" stop-color="#7c3aed" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rimLine" gradientUnits="userSpaceOnUse" x1="590" y1="250" x2="810" y2="40">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.1"/>
+      <stop offset="0.5" stop-color="#67e8f9" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#f5d0fe" stop-opacity="1"/>
+    </linearGradient>
+
+    <!-- specular -->
+    <radialGradient id="spec" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="0.35" stop-color="#e9d5ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#c084fc" stop-opacity="0"/>
+    </radialGradient>
+
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'Courier New', monospace; }
+      .tw { animation: tw 3s ease-in-out infinite; }
+      .tw2 { animation: tw 4.5s ease-in-out infinite 1s; }
+      .tw3 { animation: tw 2.2s ease-in-out infinite 0.5s; }
+      @keyframes tw { 0%,100% { opacity: .2 } 50% { opacity: 1 } }
+      .blink { animation: bl 1.2s steps(2) infinite; }
+      @keyframes bl { 50% { opacity: 0 } }
+      .scan { animation: sc 3s ease-in-out infinite; }
+      @keyframes sc { 0%,100% { opacity: .25 } 50% { opacity: 1 } }
+      .pulse { animation: pu 7s ease-in-out infinite; }
+      @keyframes pu { 0%,100% { opacity: .8 } 50% { opacity: 1 } }
+      .glint { animation: gt 3.6s ease-in-out infinite; }
+      .glint2 { animation: gt 4.8s ease-in-out infinite 1.3s; }
+      .glint3 { animation: gt 2.9s ease-in-out infinite 2.1s; }
+      @keyframes gt { 0%,100% { opacity: 0.1 } 50% { opacity: 1 } }
+      /* planet rotation: the surface slides across the disc */
+      .driftL { animation: dr 240s linear infinite; }
+      .driftC { animation: dr 140s linear infinite; }
+      @keyframes dr { from { transform: translateX(-900px) } to { transform: translateX(0) } }
+      @media (prefers-reduced-motion: reduce) {
+        .driftL, .driftC, .tw, .tw2, .tw3, .pulse, .scan, .glint, .glint2, .glint3 { animation: none }
+      }
+    </style>
+  </defs>
+
+  <!-- deep space -->
+  <rect width="900" height="260" fill="url(#bg)"/>
+
+  <!-- nebula smoke -->
+  <g mask="url(#smokeMask)">
+    <rect x="0" y="0" width="900" height="260" filter="url(#smoke)" opacity="0.6"/>
+  </g>
+
+  <!-- magenta light from the top right -->
+  <rect x="0" y="0" width="900" height="260" fill="url(#light)"/>
+
+  <!-- stars and dust -->
+  <g fill="#ffffff">
+    <circle class="tw" cx="40" cy="30" r="1.1"/><circle class="tw2" cx="110" cy="84" r="0.9"/>
+    <circle class="tw3" cx="180" cy="38" r="1.3"/><circle class="tw" cx="262" cy="118" r="0.8"/>
+    <circle class="tw2" cx="332" cy="24" r="1.1"/><circle class="tw3" cx="402" cy="70" r="0.9"/>
+    <circle class="tw" cx="470" cy="46" r="1.2"/><circle class="tw2" cx="540" cy="22" r="0.9"/>
+    <circle class="tw3" cx="30" cy="190" r="1"/><circle class="tw" cx="88" cy="232" r="1.3"/>
+    <circle class="tw2" cx="140" cy="150" r="0.8"/><circle class="tw3" cx="224" cy="176" r="1"/>
+    <circle class="tw" cx="420" cy="196" r="0.9"/><circle class="tw2" cx="482" cy="168" r="1"/>
+    <circle class="tw3" cx="520" cy="236" r="0.9"/><circle class="tw" cx="566" cy="204" r="0.8"/>
+    <circle class="tw2" cx="852" cy="196" r="0.9"/><circle class="tw3" cx="874" cy="230" r="1.1"/>
+    <circle class="tw" cx="838" cy="244" r="0.8"/><circle class="tw2" cx="610" cy="248" r="0.9"/>
+    <circle class="tw3" cx="20" cy="96" r="0.9"/><circle class="tw" cx="296" cy="84" r="0.8"/>
+    <circle class="tw2" cx="360" cy="150" r="0.7"/><circle class="tw3" cx="180" cy="214" r="0.9"/>
+    <circle class="tw" cx="450" cy="226" r="0.7"/><circle class="tw2" cx="400" cy="240" r="0.8"/>
+  </g>
+
+  <!-- planet block: scaled 1.1x around its center and moved down 12px -->
+  <g transform="translate(700 152) scale(1.1) translate(-700 -140)">
+
+  <!-- outer atmosphere glow -->
+  <g mask="url(#litMask)">
+    <circle cx="700" cy="140" r="152" fill="url(#atmo2)" filter="url(#b6)"/>
+    <circle cx="700" cy="140" r="134" fill="url(#atmo1)" filter="url(#b3)"/>
+  </g>
+
+  <!-- planet -->
+  <g clip-path="url(#planetClip)">
+    <circle cx="700" cy="140" r="118" fill="url(#ocean)"/>
+    <g class="driftL">
+      <rect x="0" y="0" width="900" height="260" filter="url(#land)"/>
+      <g transform="translate(900 0)"><rect x="0" y="0" width="900" height="260" filter="url(#land)"/></g>
+    </g>
+    <g class="driftC" opacity="0.7">
+      <rect x="0" y="0" width="900" height="260" filter="url(#clouds)"/>
+      <g transform="translate(900 0)"><rect x="0" y="0" width="900" height="260" filter="url(#clouds)"/></g>
+    </g>
+    <g mask="url(#veinMask)">
+      <g class="driftL" opacity="0.85">
+        <rect x="0" y="0" width="900" height="260" filter="url(#veins)"/>
+        <g transform="translate(900 0)"><rect x="0" y="0" width="900" height="260" filter="url(#veins)"/></g>
+      </g>
+    </g>
+    <!-- shadow side -->
+    <rect x="0" y="0" width="900" height="260" fill="url(#shade)"/>
+    <!-- glossy highlight -->
+    <ellipse cx="768" cy="76" rx="78" ry="40" transform="rotate(-38 768 76)" fill="url(#spec)" filter="url(#b3)" opacity="0.8"/>
+    <circle cx="786" cy="60" r="6" fill="#ffffff" opacity="0.95" filter="url(#b1)"/>
+    <!-- atmospheric rim -->
+    <g mask="url(#litMask)">
+      <circle class="pulse" cx="700" cy="140" r="118" fill="url(#rimIn)"/>
+    </g>
+    <!-- glints -->
+    <g stroke="#ffffff" stroke-width="0.9" stroke-linecap="round" fill="none">
+      <g class="glint"><path d="M742 56h12M748 50v12"/></g>
+      <g class="glint2"><path d="M774 90h10M779 85v10"/></g>
+      <g class="glint3"><path d="M716 78h8M720 74v8"/></g>
+      <g class="glint"><path d="M802 114h8M806 110v8"/></g>
+      <g class="glint2"><path d="M752 122h7M755.500 118.500v7"/></g>
+      <g class="glint3"><path d="M760 46h9M764.500 41.500v9"/></g>
+      <g class="glint2"><path d="M731 106h6M734 103v6"/></g>
+    </g>
+  </g>
+
+  <!-- limb line -->
+  <circle cx="700" cy="140" r="118" fill="none" stroke="url(#rimLine)" stroke-width="1.6"/>
+
+  </g>
+
+  <!-- HUD text -->
+  <g class="mono">
+    <text x="48" y="64" fill="#67e8f9" font-size="13" letter-spacing="3">MISSION CONTROL // SWAIKU</text>
+    <text x="48" y="124" fill="#ffffff" font-size="56" font-weight="700" letter-spacing="2">SWAIKU</text>
+    <text x="48" y="154" fill="#c4b5fd" font-size="16" letter-spacing="1">Data Science  ·  Robotics  ·  Space  ·  Open Source</text>
+    <text x="48" y="226" fill="#94a3b8" font-size="12">STATUS: NOMINAL<tspan class="blink" fill="#4ade80"> ●</tspan></text>
+  </g>
+
+  <!-- frame corners -->
+  <g stroke="#67e8f9" stroke-opacity="0.6" stroke-width="1.5" fill="none">
+    <path d="M12 36 V12 H36"/><path d="M864 12 H888 V36"/>
+    <path d="M12 224 V248 H36"/><path d="M864 248 H888 V224"/>
+  </g>
+</svg>

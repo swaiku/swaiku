@@ -1,55 +1,99 @@
+<div align="center">
+
+<img src="./header.svg" alt="Swaiku mission control" width="100%" />
+
+<br/>
+
 [![wakatime](https://wakatime.com/badge/user/018e1d14-e724-421b-829a-f36c5ce56b98.svg?style=for-the-badge)](https://wakatime.com/@018e1d14-e724-421b-829a-f36c5ce56b98)
+![HES-SO](https://img.shields.io/badge/HES--SO-MSc_Data_Science-0b0f2a?style=for-the-badge&labelColor=1a1040)
+![Linux](https://img.shields.io/badge/Linux-Daily_driver-0b0f2a?style=for-the-badge&logo=linux&logoColor=white&labelColor=1a1040)
 
-# Hey there! 🫣
+</div>
 
-I’m **Swaiku**, a tech enthusiast with a curious mind, passionate about technology that respects privacy and leverages open source innovation.
+---
 
-## 🚀 About Me
+<img src="./titles/briefing.svg" alt="Mission briefing" width="100%" />
 
-- 🎓 Currently doing a Bachelor in Computer Science, Data Engineering
-- 🔒 Transparency + data protection matters
-- 🐧 Linux User (Fedora Currently)
+Hi, I'm **Jérémy**, aka **Swaiku**. Bachelor in Data Engineering at **HEIA-FR**, now a **Master's student in Data Science at HES-SO**.
 
-### Hobbies
+I like building things that move, learn and stay honest about your data: robots, ML pipelines and self-hosted infrastructure, all with a strong preference for open source and privacy.
 
-![F1 Fan](https://img.shields.io/badge/🏎-Fan-red?style=for-the-badge)
-![Space Dreamer](https://img.shields.io/badge/Space-Dreamer-black?style=for-the-badge)
-![Gaming Enthusiast](https://img.shields.io/badge/Gaming-Enthusiast-purple?style=for-the-badge)
-![Tech Explorer](https://img.shields.io/badge/Tech-Explorer-green?style=for-the-badge)
-![Privacy Advocate](https://img.shields.io/badge/Privacy-Advocate-yellow?style=for-the-badge)
-![Fitness](https://img.shields.io/badge/Fitness-orange?style=for-the-badge)
-![Archery](https://img.shields.io/badge/Archery-lightgreen?style=for-the-badge)
+```text
+┌─────────────────────── TELEMETRY ───────────────────────┐
+│ OPERATOR      : Swaiku (Jérémy)                         │
+│ BASE          : Fribourg, Switzerland                   │
+│ TRAINING      : MSc Data Science, HES-SO                │
+│ PREVIOUS      : BSc Data Engineering, HEIA-FR           │
+│ FLIGHT HISTORY: Eurobot robotics competition (alumni)   │
+│ GROUND STATION: Raspberry Pi 5 homelab                  │
+│ OS            : Linux                                   │
+│ CONDITIONING  : Running, archery                        │
+│ PRIORITIES    : Space, Robotics, Privacy, Open Source   │
+└─────────────────────────────────────────────────────────┘
+```
 
-<h2>🚀 Languages and Tools I Use</h2>
-<p><a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" style="display: inline-block;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="42" height="42" /></a>
-<a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" style="display: inline-block;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="42" height="42" /></a>
-<a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" style="display: inline-block;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="42" height="42" /></a>
-<a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" style="display: inline-block;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="42" height="42" /></a>
-<a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" style="display: inline-block;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="42" height="42" /></a>
-<a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" style="display: inline-block;"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" alt="svelte" width="42" height="42" /></a>
-<a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" style="display: inline-block;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="42" height="42" /></a>
-<a target="_blank" href="https://bestofjs.org/logos/vuetify.svg" style="display: inline-block;"><img src="https://bestofjs.org/logos/vuetify.svg" alt="vuetify" width="42" height="42" /></a>
-<a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" style="display: inline-block;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="42" height="42" /></a>
-<a target="_blank" href="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" style="display: inline-block;"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="42" height="42" /></a>
-<a target="_blank" href="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" style="display: inline-block;"><img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="42" height="42" /></a>
-<a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" style="display: inline-block;"><img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="42" height="42" /></a>
-<a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" style="display: inline-block;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="42" height="42" /></a>
-<a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" style="display: inline-block;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="42" height="42" /></a>
-<a target="_blank" href="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" style="display: inline-block;"><img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="42" height="42" /></a>
-<a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" style="display: inline-block;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="42" height="42" /></a>
-<a target="_blank" href="https://www.vectorlogo.zone/logos/nuxtjs/nuxtjs-icon.svg" style="display: inline-block;"><img src="https://www.vectorlogo.zone/logos/nuxtjs/nuxtjs-icon.svg" alt="nuxtjs" width="42" height="42" /></a>
-<a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" style="display: inline-block;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="42" height="42" /></a>
-<a target="_blank" href="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" style="display: inline-block;"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="42" height="42" /></a></p>
+---
 
-## 🎨 My GitHub
+<img src="./titles/payload.svg" alt="Payload modules" width="100%" />
 
-Here you’ll find:
+**Flight software**
 
-- 🌟 Passion projects
-- 🧪 Experiments with cutting-edge tech
+<img src="https://skillicons.dev/icons?i=py,cpp,ts,js,go&theme=dark" alt="languages" />
 
-Thanks for stopping by, and happy coding! 💻✨
+**Onboard systems**
 
+<img src="https://skillicons.dev/icons?i=ros,raspberrypi,linux,git,github,gitlab&theme=dark" alt="robotics" />
 
+**Data & ground segment**
 
+<img src="https://skillicons.dev/icons?i=pytorch,sklearn,mysql,docker&theme=dark" alt="data" />
 
+**Mission dashboards**
+
+<img src="https://skillicons.dev/icons?i=astro,svelte,tailwind,bun,godot,obsidian&theme=dark" alt="web" />
+
+---
+
+<img src="./titles/missions.svg" alt="Active missions" width="100%" />
+
+| Mission | Objective | Status |
+|---|---|---|
+| **Master's program** | MLOps, cloud systems, new data technologies | `IN PROGRESS` |
+| **UAV research** | Autonomous navigation for UAVs | `IN PROGRESS` |
+| **Homelab** | Self-hosted stack on Raspberry Pi 5 | `ONLINE` |
+| **Archery club** | Website and media for my local club | `MAINTAINED` |
+| **Running** | Building endurance, one run at a time | `IN PROGRESS` |
+
+---
+
+<img src="./titles/offduty.svg" alt="Off duty" width="100%" />
+
+<div align="center">
+
+![Space](https://img.shields.io/badge/Space-Dreamer-0b0f2a?style=for-the-badge&logo=nasa&logoColor=white&labelColor=1a1040)
+![Robotics](https://img.shields.io/badge/Robotics-Tinkerer-0b0f2a?style=for-the-badge&logo=ros&logoColor=white&labelColor=1a1040)
+![Running](https://img.shields.io/badge/Running-In_training-0b0f2a?style=for-the-badge&logo=strava&logoColor=FC4C02&labelColor=1a1040)
+![Archery](https://img.shields.io/badge/Archery-Club_member-0b0f2a?style=for-the-badge&labelColor=1a1040)
+![F1](https://img.shields.io/badge/Formula_1-Fan-0b0f2a?style=for-the-badge&logo=formula1&logoColor=e10600&labelColor=1a1040)
+![Privacy](https://img.shields.io/badge/Privacy-Advocate-0b0f2a?style=for-the-badge&logo=proton&logoColor=a78bfa&labelColor=1a1040)
+![Gaming](https://img.shields.io/badge/Gaming-Enthusiast-0b0f2a?style=for-the-badge&logo=steam&logoColor=white&labelColor=1a1040)
+
+</div>
+
+---
+
+<img src="./titles/log.svg" alt="Transmission log" width="100%" />
+
+- Passion projects
+- Experiments with cutting-edge tech
+- Tooling and self-hosted setups
+
+<div align="center">
+
+<br/>
+
+```text
+>> END OF TRANSMISSION. Thanks for stopping by, and happy coding.
+```
+
+</div>
